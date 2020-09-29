@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bookings</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="booking.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="bootstrap-4.3.1-dist/css/mdb.min.css" rel="stylesheet">
+	<script type="text/javascript" src="bootstrap-4.3.1-dist/js/slick.min.js"></script>
+	<script type="text/javascript" src="bootstrap-4.3.1-dist/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+</head>
+<body background="image/back.jpg">
+	<!-- navbar -->
+	<nav class="navbar sticky-top" style="background: rgb(88,69,87);">
+		<div>
+			<a href="index.html" class="navbar-brand" style="color: white"><h1>Tourists Zone</h1></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+		<div>
+			<ul class="nav justify-content-end" id="navbarSupportedContent">
+				<li class="nav-item">
+					<a href="index.html" class="nav-link" style="color: white"><h5>Home</h5></a>
+				</li>
+				<li class="nav-item dropdown active">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white"><h5>Locations</h5></a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a href="dhaka.html" class="dropdown-item">Dhaka</a>
+						<a href="tangail.html" class="dropdown-item">Tangail</a>
+						<a href="gazipur.html" class="dropdown-item">Gazipur</a>
+						<a href="cumilla.html" class="dropdown-item">Cumilla</a>
+						<a href="lakshmipur.html" class="dropdown-item">Lakshmipur</a>
+						<a href="cox's bazar.html" class="dropdown-item">Cox's Bazar</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a href="gallery.html" class="nav-link" style="color: white"><h5>Gallery</h5></a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link" style="color: white"><h5>Bookings</h5></a>
+				</li>
+				<li class="nav-item">
+					<a href="about.html" class="nav-link" style="color: white"><h5>About</h5></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div style="background: dodgerblue;padding: 30px">
+		<h1 align="center" style="color: white">Book for your Tour</h1>
+	</div>
+
+	<!-- Form -->
+	<div align="center" style="padding-top: 150px;padding-bottom: 150px">
+		<div style="background: rgb(60,60,60);color: white;width: 50%;border-radius: 5px;padding: 20px;">
+			<h4 style="color: tomato">[You have to send the money at '01680161225' first through bkash]</h4>
+			<form action="book.php" method="POST">
+				<label for="name">Name</label>
+				<input type="text" name="name" placeholder="Enter your full name">
+				<label for="Mobile">Mobile</label>
+				<input type="text" name="mobile" placeholder="Enter your mobile number">
+				<label for="email">E-mail</label>
+				<input type="email" name="email" placeholder="Enter your email">
+				<label for="date">Tour date</label>
+				<input type="date" name="date" placeholder="Enter the date you'll start your tour">
+				<label for="package">Package</label>
+				<select id="package" name="package">
+					<option value="tngp1">tngp1</option>
+					<option value="tngp1">tngp2</option>
+					<option value="tngp1">tngp3</option>
+					<option value="lmpp1">lmpp1</option>
+					<option value="lmpp2">lmpp2</option>
+					<option value="lmpp3">lmpp3</option>
+					<option value="gzpp1">gzpp1</option>
+					<option value="gzpp2">gzpp2</option>
+					<option value="gzpp3">gzpp3</option>
+					<option value="cxbp1">cxbp1</option>
+					<option value="cxbp2">cxbp2</option>
+					<option value="cxbp3">cxbp3</option>
+					<option value="cumgp1">cumgp1</option>
+					<option value="cumgp2">cumgp2</option>
+					<option value="cumgp3">cumgp3</option>
+					<option value="dhk1">dhk1</option>
+					<option value="dhk2">dhk2</option>
+					<option value="dhk3">dhk3</option>
+				</select>
+				<label for="transaction">Bkash Transaction id</label>
+				<input type="text" name="transaction" placeholder="Enter the bkash transaction id">
+				<input type="submit" value="submit" name="submit">
+			</form>
+		</div>
+	</div>
+	<!-- Footer -->
+	<footer class="page-footer font-small special-color-dark pt-4">
+		<div class="container">
+			<ul class="list-unstyled list-inline text-center">
+				<li class="list-inline-item">
+					<a class="btn-floating btn-fb mx-1">
+						<i class="fa fa-facebook fa-lg white-text mr-md-4"> </i>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a class="btn-floating btn-tw mx-1">
+						<i class="fa fa-twitter fa-lg white-text mr-md-4"> </i>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a class="btn-floating btn-gplus mx-1">
+						<i class="fa fa-google-plus fa-lg white-text mr-md-4"> </i>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a class="btn-floating btn-li mx-1">
+						<i class="fa fa-linkedin fa-lg white-text mr-md-4"> </i>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a class="btn-floating btn-dribbble mx-1">
+						<i class="fa fa-instagram fa-lg white-text mr-md-4"> </i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer-copyright text-center py-3">© 2018 Copyright:
+			<a href="https://facebook.com/ash.talukder"> MountainMovers.com</a>
+		</div>
+	</footer>   
+</body>
+</html>

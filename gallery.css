@@ -1,0 +1,30 @@
+input[type=submit] {
+  width: 24%;
+  float: right;
+  overflow: hidden;
+  background-color: white;
+  color: #45a049;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+  color: white;
+}
+
+input[type=image], select {
+  width: 75%;
+  float: left;
+  overflow: hidden;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: white;
+}
